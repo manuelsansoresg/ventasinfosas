@@ -1,0 +1,466 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    color: #1f2d3d;
+}
+
+.landing-hero {
+    background: #fff;
+    overflow-x: hidden;
+    /* Prevent horizontal scroll from rotated elements */
+}
+
+.label-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 1px solid #E0D8FF;
+    border-radius: 50rem;
+    background: #F4F0FF;
+    color: #7A5CF0;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.hero-title {
+    font-weight: 800;
+    color: rgb(39, 87, 126);
+}
+
+@media (min-width: 992px) {
+    .hero-title {
+    }
+}
+
+.hero-sub {
+    color: #4B5871;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-list {
+    margin: 0;
+    padding: 0;
+    margin-top: 0.5rem;
+}
+
+.hero-list li {
+    list-style: none;
+    position: relative;
+    padding-left: 1.5rem;
+    margin: 0.5rem 0;
+    font-weight: 600;
+    color: #1f2d3d;
+    font-size: 1.05rem;
+}
+
+.hero-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: -0.2rem;
+    font-size: 1.5rem;
+    color: #1f2d3d;
+    line-height: 1;
+}
+
+.collage-title {
+    font-weight: 800;
+    color: rgb(39, 87, 126);;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+/* Imagen única lado derecho */
+.hero-bono {
+    display: block;
+    width: 100%;
+    max-width: 620px;
+    height: auto;
+    margin: 0.5rem auto 0 auto;
+    object-fit: contain;
+}
+
+.hero-collage {
+    position: relative;
+    width: 100%;
+    max-width: 580px;
+    height: 400px;
+    margin-top: 1rem;
+}
+
+@media (max-width: 576px) {
+    .hero-collage {
+        height: 320px;
+        transform: scale(0.9);
+        transform-origin: top center;
+    }
+}
+
+.collage-card {
+    position: absolute;
+    background: #fff;
+    border-radius: 0.8rem;
+    box-shadow: 0 12px 28px rgba(25, 56, 95, 0.15);
+    border: 1px solid #e6ebf3;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Placeholder colors if images are missing, but ideally we map them */
+.card-main {
+    width: 240px;
+    height: 340px;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%) rotate(0deg);
+    z-index: 10;
+    background-image: url('../../images/Screenshot 2025-11-30 154410.png');
+}
+
+.card-left-top {
+    width: 160px;
+    height: 220px;
+    left: 40px;
+    top: 10px;
+    transform: rotate(-8deg);
+    z-index: 5;
+    background-image: url('../../images/Screenshot 2025-11-30 154305.png');
+}
+
+.card-right-top {
+    width: 160px;
+    height: 220px;
+    right: 40px;
+    top: 10px;
+    transform: rotate(8deg);
+    z-index: 5;
+    background-image: url('../../images/Screenshot 2025-11-30 154426.png');
+}
+
+.card-left-bottom {
+    width: 140px;
+    height: 190px;
+    left: 10px;
+    bottom: 40px;
+    transform: rotate(-15deg);
+    z-index: 4;
+    background-image: url('../../images/Screenshot 2025-11-30 154434.png');
+}
+
+.card-right-bottom {
+    width: 140px;
+    height: 190px;
+    right: 10px;
+    bottom: 40px;
+    transform: rotate(15deg);
+    z-index: 4;
+    background-image: url('../../images/Screenshot 2025-11-30 154336.png');
+}
+
+.discount-badge {
+    position: absolute;
+    right: -10px;
+    bottom: 40px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: #E84545;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 800;
+    line-height: 1.1;
+    box-shadow: 0 10px 20px rgba(232, 69, 69, 0.4);
+    transform: rotate(15deg);
+    z-index: 20;
+    border: 3px solid #fff;
+}
+
+.discount-badge span {
+    font-size: 1.8rem;
+    display: block;
+}
+
+.bono-tag {
+    position: absolute;
+    width: 80px;
+    z-index: 20;
+}
+
+.bono-1 {
+    left: 0;
+    bottom: 20px;
+    transform: rotate(-10deg);
+}
+
+.bono-2 {
+    right: 0;
+    top: 50px;
+    /* Adjusted based on typical layouts */
+    display: none;
+    /* Hide second bono if not in image, or adjust */
+}
+
+/* Button */
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2.6rem;
+    border-radius: 999px;
+    background: #7d2ae8;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.1rem;
+    letter-spacing: 0.01em;
+    box-shadow: none;
+    transition: transform 0.1s;
+    border: none;
+    text-transform: uppercase;
+    animation: pulse 1.6s ease-in-out infinite;
+}
+
+.cta-button:active { transform: scale(1.02); }
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+}
+
+/* Social Proof */
+.social-proof {
+    max-width: 800px;
+    margin: 2rem auto 0;
+}
+
+.star {
+    width: 22px;
+    height: 22px;
+}
+
+.proof-text {
+    font-weight: 800;
+    color: #19385F;
+    font-size: 1.1rem;
+}
+
+.proof-list {
+    margin-top: 1rem;
+    padding-left: 0;
+    text-align: left;
+    display: inline-block;
+}
+
+.proof-list li {
+    list-style: none;
+    position: relative;
+    padding-left: 1.5rem;
+    margin: 0.4rem 0;
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: -0.2rem;
+    font-size: 1.5rem;
+    color: #1f2d3d;
+    line-height: 1;
+}
+
+.collage-title {
+    font-weight: 800;
+    color: rgb(39, 87, 126);;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.hero-collage {
+    position: relative;
+    width: 100%;
+    max-width: 580px;
+    height: 400px;
+    margin-top: 1rem;
+}
+
+@media (max-width: 576px) {
+    .hero-collage {
+        height: 320px;
+        transform: scale(0.9);
+        transform-origin: top center;
+    }
+}
+
+.collage-card {
+    position: absolute;
+    background: #fff;
+    border-radius: 0.8rem;
+    box-shadow: 0 12px 28px rgba(25, 56, 95, 0.15);
+    border: 1px solid #e6ebf3;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Placeholder colors if images are missing, but ideally we map them */
+.card-main {
+    width: 240px;
+    height: 340px;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%) rotate(0deg);
+    z-index: 10;
+    background-image: url('../../images/Screenshot 2025-11-30 154410.png');
+}
+
+.card-left-top {
+    width: 160px;
+    height: 220px;
+    left: 40px;
+    top: 10px;
+    transform: rotate(-8deg);
+    z-index: 5;
+    background-image: url('../../images/Screenshot 2025-11-30 154305.png');
+}
+
+.card-right-top {
+    width: 160px;
+    height: 220px;
+    right: 40px;
+    top: 10px;
+    transform: rotate(8deg);
+    z-index: 5;
+    background-image: url('../../images/Screenshot 2025-11-30 154426.png');
+}
+
+.card-left-bottom {
+    width: 140px;
+    height: 190px;
+    left: 10px;
+    bottom: 40px;
+    transform: rotate(-15deg);
+    z-index: 4;
+    background-image: url('../../images/Screenshot 2025-11-30 154434.png');
+}
+
+.card-right-bottom {
+    width: 140px;
+    height: 190px;
+    right: 10px;
+    bottom: 40px;
+    transform: rotate(15deg);
+    z-index: 4;
+    background-image: url('../../images/Screenshot 2025-11-30 154336.png');
+}
+
+.discount-badge {
+    position: absolute;
+    right: -10px;
+    bottom: 40px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: #E84545;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 800;
+    line-height: 1.1;
+    box-shadow: 0 10px 20px rgba(232, 69, 69, 0.4);
+    transform: rotate(15deg);
+    z-index: 20;
+    border: 3px solid #fff;
+}
+
+.discount-badge span {
+    font-size: 1.8rem;
+    display: block;
+}
+
+.bono-tag {
+    position: absolute;
+    width: 80px;
+    z-index: 20;
+}
+
+.bono-1 {
+    left: 0;
+    bottom: 20px;
+    transform: rotate(-10deg);
+}
+
+.bono-2 {
+    right: 0;
+    top: 50px;
+    /* Adjusted based on typical layouts */
+    display: none;
+    /* Hide second bono if not in image, or adjust */
+}
+
+/* Button */
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2.6rem;
+    border-radius: 999px;
+    background: #7d2ae8;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.1rem;
+    letter-spacing: 0.01em;
+    box-shadow: none;
+    transition: transform 0.1s;
+    border: none;
+    text-transform: uppercase;
+    animation: pulse 1.6s ease-in-out infinite;
+}
+
+.cta-button:active { transform: scale(1.02); }
+
+/* Social Proof */
+.social-proof {
+    max-width: 800px;
+    margin: 2rem auto 0;
+}
+
+.star {
+    width: 22px;
+    height: 22px;
+}
+
+.proof-text {
+    font-weight: 800;
+    color: #19385F;
+    font-size: 1.1rem;
+}
+
+.proof-list {
+    margin-top: 1rem;
+    padding-left: 0;
+    text-align: left;
+    display: inline-block;
+}
+
+.proof-list li {
+    list-style: none;
+    position: relative;
+    padding-left: 1.5rem;
+    margin: 0.4rem 0;
+    color: #4B5871;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.proof-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: -0.45rem;
+    font-size: 1.5rem;
+    color: #19385F;
+}
