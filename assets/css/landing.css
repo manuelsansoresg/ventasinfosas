@@ -64,12 +64,42 @@ body {
     line-height: 1;
 }
 
+/* Flechas para la lista de la sección de prácticas */
+.issues-list li::before {
+    content: "✓";
+    font-size: 1.2rem;
+    color: #19385F;
+    top: -0.1rem;
+}
+
+/* Nota tipo etiqueta azul */
+.note-badge {
+    display: inline-block;
+    background: #86A6F3;
+    color: #fff;
+    font-weight: 800;
+    border-radius: 14px;
+    padding: 0.6rem 1rem;
+    margin-top: 0.75rem;
+    position: relative;
+    text-align: center;
+}
+
+
 .collage-title {
     font-weight: 800;
-    color: rgb(39, 87, 126);;
+    color: rgb(39, 87, 126);
     letter-spacing: 0.02em;
     text-transform: uppercase;
     margin-bottom: 1rem;
+}
+
+.color-blue {
+    color: rgb(39, 87, 126);;
+}
+
+.color-gray {
+    color: rgb(74, 92, 116);
 }
 
 /* Imagen única lado derecho */
@@ -464,3 +494,9 @@ body {
     font-size: 1.5rem;
     color: #19385F;
 }
+
+/* Centrar bloque de listas de contenidos */
+.content-list { max-width: 900px; margin: 0 auto; margin-top: .5rem; }
+
+/* Lista compacta para menos separación entre ítems */
+.compact-list li { margin: .25rem 0; }
