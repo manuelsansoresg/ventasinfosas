@@ -513,3 +513,43 @@ body {
 .t-avatar{position:absolute;right:16px;top:16px;width:52px;height:52px;border-radius:50%;object-fit:cover}
 .t-quote{color:#4B5871;font-size:1rem;line-height:1.6;margin-top:.6rem}
 .t-author{color:#19385F;font-weight:800;margin-top:.75rem;font-size:.95rem}
+
+/* Bonos */
+.bonus-section{max-width:1100px;margin:0 auto}
+.bonus-card{background:#fff;border:1px solid #e6ebf3;border-radius:16px;box-shadow:0 8px 20px rgba(25,56,95,.08);padding:1rem 1.2rem}
+.bonus-head{font-weight:800;color:#19385F}
+.bonus-price{font-weight:800;color:#19385F;margin:.4rem 0}
+.bonus-list{margin:.4rem 0 0 0;padding:0}
+.bonus-list li{list-style:none;position:relative;padding-left:1.4rem;margin:.35rem 0;color:#4B5871}
+.bonus-list li::before{content:"✓";position:absolute;left:0;top:.05rem;color:#1eb05d;font-weight:800}
+.bonus-image{display:block;width:100%;max-width:560px;height:auto;margin:0 auto;object-fit:contain}
+
+/* Autor */
+.author-text{color:#4B5871;font-size:1.05rem;line-height:1.65;margin:.4rem 0}
+.author-text strong{color:#19385F;font-weight:800}
+.author-photo{width:100%;max-width:420px;height:auto;border-radius:16px;object-fit:cover}
+
+/* Compra segura */
+.secure-list{margin-top:.5rem;padding:0;max-width:800px}
+.secure-list li{list-style:none;margin:.35rem 0;color:#4B5871;font-size:1.02rem}
+.secure-list .icon{display:inline-block;width:22px;text-align:center;margin-right:.35rem}
+.secure-list strong{color:#19385F}
+
+/* FAQ */
+.faq-item{background:#f7f9fc;border:1px solid #e6ebf3;border-radius:12px;padding:1rem 1.2rem;margin:.65rem 0}
+.faq-q{font-weight:800;color:#19385F;margin-bottom:.35rem}
+.faq-a{margin:0;line-height:1.6}
+
+/* Oferta limitada */
+.offer-block{padding:.5rem 0}
+.offer-title{color:#e03a3a;font-weight:800;letter-spacing:.02em;margin-bottom:.25rem}
+.offer-before{color:#4B5871;font-size:3.60rem;font-weight:700}
+.strike{position:relative;display:inline-block;color:#4B5871}
+.strike::after{content:"";position:absolute;left:-4px;right:-4px;top:50%;height:2px;background:#e03a3a;transform:rotate(-8deg)}
+.offer-now{color:#00c4cc;font-weight:800;font-size:5rem;line-height:1;margin:.25rem 0}
+.offer-now .price-big{font-size:5rem}
+.offer-save{color:#00c4cc;font-weight:800;font-size:2.5rem}
+@media(max-width:576px){
+  .offer-now{font-size:2rem}
+  .offer-now .price-big{font-size:2.4rem}
+}
