@@ -241,18 +241,22 @@ body {
     display: inline-block;
     padding: 1rem 2.6rem;
     border-radius: 999px;
-    background: #7d2ae8;
+    background: #A78BFF;
+    background-color: #A78BFF !important;
     color: #fff;
     text-decoration: none;
     font-weight: 800;
     font-size: 1.1rem;
     letter-spacing: 0.01em;
     box-shadow: none;
-    transition: transform 0.1s;
+    transition: transform 0.1s, opacity 0.15s;
     border: none;
     text-transform: uppercase;
     animation: pulse 1.6s ease-in-out infinite;
 }
+.cta-button--aqua{background:#00c4cc;background-color:#00c4cc !important}
+.cta-button:hover, .cta-button:focus{opacity:.95;background:#A78BFF;background-color:#A78BFF !important;color:#fff}
+.cta-button--aqua:hover, .cta-button--aqua:focus{opacity:.95;background:#00c4cc;background-color:#00c4cc !important;color:#fff}
 
 .cta-button:active { transform: scale(1.02); }
 
