@@ -500,3 +500,16 @@ body {
 
 /* Lista compacta para menos separación entre ítems */
 .compact-list li { margin: .25rem 0; }
+
+/* Bloques de profesionales */
+.pro-block{background:#F4F7FF;border:1px solid #e6ebf3;border-radius:12px;padding:.75rem 1rem}
+.pro-avatar{width:52px;height:52px;border-radius:50%;object-fit:cover}
+.pro-title{font-weight:800;color:#19385F}
+.pro-sub{font-size:.95rem}
+.testimonials{margin-top:1rem;max-width:1100px;margin-left:auto;margin-right:auto}
+.t-card{position:relative;background:#fff;border:1px solid #e6ebf3;border-radius:16px;box-shadow:0 8px 20px rgba(25,56,95,.08);height:100%;padding:1.25rem 1.25rem 1rem 1.25rem;padding-right:100px}
+.t-stars{display:flex;gap:6px;margin-bottom:.5rem}
+.t-stars img{width:18px;height:18px}
+.t-avatar{position:absolute;right:16px;top:16px;width:52px;height:52px;border-radius:50%;object-fit:cover}
+.t-quote{color:#4B5871;font-size:1rem;line-height:1.6;margin-top:.6rem}
+.t-author{color:#19385F;font-weight:800;margin-top:.75rem;font-size:.95rem}
