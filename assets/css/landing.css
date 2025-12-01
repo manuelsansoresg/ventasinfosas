@@ -282,6 +282,15 @@ body {
     color: #19385F;
     font-size: 1.1rem;
 }
+@media (max-width: 576px) {
+    .social-proof .d-flex { flex-wrap: nowrap; gap: 4px; }
+    .star { width: 14px; height: 14px; }
+    .proof-text { white-space: nowrap; font-size: 0.95rem; }
+}
+@media (max-width: 420px) {
+    .social-proof .d-flex { flex-wrap: wrap; }
+    .proof-text { white-space: normal; width: 100%; margin-top: 4px; }
+}
 
 .proof-list {
     margin-top: 1rem;
